@@ -99,8 +99,7 @@ const Who = () => {
             <Subtitle>Who we Are</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+            we are a Deprtment of Chitkara University working towards student welfare by offering them to work on multiple projects, participate in hackathons/events and learn from different industry certified courses
           </Desc>
           <Button>See our works</Button>
         </Right>

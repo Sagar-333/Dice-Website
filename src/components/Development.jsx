@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
+  height: 80px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -33,8 +33,7 @@ const Development = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Have a field or a topic that you are extremely interested in? Join Us and Research on the field of your interest and become its master.
       </Desc>
     </>
   );

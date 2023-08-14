@@ -1,15 +1,12 @@
 import React, { Suspense } from "react";
 import { OrbitControls, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Shoe from "./Shoe";
-import Book from "./Book3";
 import Computer from "./Computer";
-import Car from "./Car3";
 import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
+  height: 95px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -38,8 +35,7 @@ const ProductDesign = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Join us to work on Advance Technologies which are currently trending in the Industry. Learn all the technologies from scratch and be a pro in them.
       </Desc>
     </>
   );

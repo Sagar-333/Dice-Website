@@ -6,7 +6,7 @@ import Car from "./Car3";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
+  height: 120px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -35,8 +35,7 @@ const Projects = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Work on already existing Prototype projects or present your own Idea and build it in Real-Life. Whether it is realted to making drones or building an electric bicycle from scratch, we have got you covered.
       </Desc>
     </>
   );

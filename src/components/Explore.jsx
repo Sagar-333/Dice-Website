@@ -6,7 +6,7 @@ import Book from "./Book3";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
+  height: 95px;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -35,8 +35,7 @@ const Projects = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Explore your potential and Learn with the various Industry certified courses from MicroSoft, LinkedIN, and many more Industry leaders and get your own Certificate from them
       </Desc>
     </>
   );
