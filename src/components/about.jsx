@@ -1,13 +1,9 @@
-import React, { Suspense } from "react";
-import styled , { keyframes }from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import Navbar from "./Navbar";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
-import { Link } from "react-router-dom";
-
 
 const Section = styled.div`
-  height: 100vh;
+  height: 95vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -34,15 +30,6 @@ const Container = styled.div`
   }
 `;
 
-const bounceAnimation = keyframes`
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-`;
-
 const Left = styled.div`
   flex: 2;
   display: flex;
@@ -60,19 +47,10 @@ const Title = styled.h1`
   font-size: 70px;
   font-weight: bold;
   margin-bottom: 20px;
-  animation: ${bounceAnimation} 4s infinite;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 48px;
-  }
 `;
 
 const Interdisciplinary = styled.span`
-  color: #da4ea2; 
+  color: #da4ea2;
   font-family: 'Tilt Prism';
   font-weight: 100;
 `;
@@ -80,16 +58,6 @@ const Interdisciplinary = styled.span`
 const TitleText = styled.span`
   color: white;
   font-family: 'Great Vibes';
-`;
-
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Line = styled.img`
-  height: 5px;
 `;
 
 const Subtitle = styled.h2`
@@ -114,11 +82,6 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.35s, color 0.3s, transform 0.3s;
-  &:hover {
-    background-color: #c7418d;
-    transform: scale(1.08);
-  }
 `;
 
 const Right = styled.div`
@@ -141,7 +104,6 @@ const Img = styled.img`
   right: 0;
   margin: auto;
   animation: animate 2s infinite ease alternate;
-
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 300px;
@@ -153,50 +115,35 @@ const Img = styled.img`
     }
   }
 `;
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
+
+const Line = styled.img`
+  height: 5px;
 `;
 
-const Hero = () => {
+const AboutPage = () => {
   return (
     <Section>
       <Navbar />
       <Container>
         <Left>
           <Title>
-            <TitleText>Department of</TitleText> <Interdisciplinary>Interdisciplinary</Interdisciplinary> <TitleText>Courses in </TitleText> <Interdisciplinary>Engineering</Interdisciplinary>
-            </Title>
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
-          </WhatWeDo>
+            <TitleText>About</TitleText> <Interdisciplinary>Us</Interdisciplinary>
+          </Title>
+          <Subtitle>
+            Our Mission
+          </Subtitle>
           <Desc>
-            We at DICE promote students to have hands on experience on Industry-level Projects and Hackathons.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus libero sed
+            ultrices. Aenean a sem a justo interdum elementum. Proin interdum velit in
+            nisl hendrerit consectetur.Veniam tempor minim deserunt amet non amet veniam adipisicing ullamco occaecat nisi eu veniam. Excepteur sunt eiusmod Lorem exercitation aute consequat adipisicing est enim aliqua do. Lorem nostrud veniam enim nulla incididunt amet reprehenderit reprehenderit est. Officia nostrud officia est commodo consequat Lorem.
           </Desc>
-          <Button><StyledLink to ="/about">Learn More</StyledLink></Button>
         </Left>
         <Right>
-          <Canvas>
-            <Suspense fallback={null}>
-              {/* <OrbitControls enableZoom={false} /> */}
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-          <Img src="./img/moon.png" />
+          <Img src="./img/moon.png" alt="About Us" />
         </Right>
       </Container>
     </Section>
   );
 };
 
-export default Hero;
+export default AboutPage;

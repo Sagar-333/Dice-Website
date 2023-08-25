@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Section = styled.div`
   display: flex;
@@ -45,6 +46,16 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #da4ea2;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
   transition: color 0.3s;
 
   &:hover {
@@ -101,8 +112,8 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/DiceLogo.png" />
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>About Us</ListItem>
+            <ListItem><StyledLink to="/">Home</StyledLink></ListItem>
+            <ListItem><StyledLink to="/about">About Us</StyledLink></ListItem>
             <ListItem>Projects</ListItem>
             <ListItem>Contact Us</ListItem>
           </List>
