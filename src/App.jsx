@@ -8,10 +8,10 @@ import Who from "./components/Who";
 import Works from "./components/Works";
 
 const Container = styled.div`
-  height: 100vh; /* Adjust as needed */
+  height: 100vh; 
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow-y: scroll; /* Use "scroll" to show scrollbar even if not needed */
+  overflow-y: scroll;
   scrollbar-width: none;
   color: white;
   background: url("./img/bg.jpeg");
@@ -22,7 +22,7 @@ const Container = styled.div`
 
 const Section = styled.div`
   scroll-snap-align: start;
-  height: 100vh; /* Each section occupies full viewport height */
+  height: 100vh;
 `;
 
 function App() {

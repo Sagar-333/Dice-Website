@@ -115,7 +115,7 @@ const Navbar = () => {
             <ListItem><StyledLink to="/">Home</StyledLink></ListItem>
             <ListItem><StyledLink to="/about">About Us</StyledLink></ListItem>
             <ListItem>Projects</ListItem>
-            <ListItem>Contact Us</ListItem>
+            <ListItem>Events</ListItem>
           </List>
         </Links>
         <Icons>
