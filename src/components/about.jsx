@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 
 const Section = styled.div`
-  height: 95vh;
+  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -71,17 +71,6 @@ const Desc = styled.p`
     padding: 20px;
     text-align: center;
   }
-`;
-
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 400;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 `;
 
 const Right = styled.div`

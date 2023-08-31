@@ -6,6 +6,7 @@ import AboutPage from "./components/about";
 import Contact from "./components/Contact";
 import Who from "./components/Who";
 import Works from "./components/Works";
+import AboutTeam from "./components/aboutTeam";
 
 const Container = styled.div`
   height: 100vh; 
@@ -49,7 +50,17 @@ function App() {
               </>
             }
           />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={
+          <>
+            <Section>
+              <AboutPage />
+            </Section>
+            <Section>
+              <AboutTeam />
+            </Section>
+          </>
+          }
+          />
         </Routes>
       </Router>
     </Container>
