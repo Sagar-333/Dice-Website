@@ -32,7 +32,7 @@ const Content = styled.div`
   max-width: 800px;
   text-align: justify;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 `;
 
 const Title = styled.h1`
@@ -60,7 +60,7 @@ const TitleText = styled.span`
 `;
 
 const SubTitle = styled.h1`
-  font-size: 60px;
+  font-size: 58px;
   padding-bottom: 15px;
 
   @media only screen and (max-width: 768px) {
@@ -76,7 +76,7 @@ const AboutTeam = () => {
         <ImageSection />
         <TextSection>
           <Content>
-            <SubTitle>Dr. Rajneesh Talwar</SubTitle>
+            <SubTitle><TitleText>Dr. Rajneesh Talwar</TitleText></SubTitle>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolorem, nam molestias dolores quaerat natus aut ut veniam labore? Nostrum, corporis error quo perferendis libero deserunt explicabo earum itaque facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ipsa laboriosam voluptatem alias ex. Rem similique minima amet, praesentium quibusdam unde atque a provident excepturi officiis corrupti maxime ex quas?
           </Content>
         </TextSection>

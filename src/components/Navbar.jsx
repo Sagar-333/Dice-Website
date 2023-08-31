@@ -110,7 +110,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/DiceLogo.png" />
+          <Logo src="./img/DiceWhite.png" />
           <List>
             <ListItem><StyledLink to="/">Home</StyledLink></ListItem>
             <ListItem><StyledLink to="/about">About Us</StyledLink></ListItem>
